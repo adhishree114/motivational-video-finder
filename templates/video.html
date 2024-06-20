@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Motivational Video</title>
+    <title>Video Player</title>
 </head>
 <body>
-    <h1>Your {{ category.capitalize() }} Video</h1>
-    <iframe width="560" height="315" src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
-    <br><br>
-    <a href="/">Get another video</a>
+    <h1>Watch, Ponder and Implement!</h1>
+    <div>
+        {% if video_url %}
+            <iframe width="560" height="315" src="{{ video_url }}" frameborder="0" allowfullscreen></iframe>
+        {% else %}
+            <p>No video found.</p>
+        {% endif %}
+    </div>
 </body>
 </html>
 

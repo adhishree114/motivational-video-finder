@@ -1,3 +1,7 @@
 venv/
 __pyache__/
 *.pyc
+*.pyo
+*.pyd
+*.db
+.DS_Store

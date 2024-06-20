@@ -30,7 +30,7 @@ def get_video():
     
    
     video_id = data['items'][0]['id']['videoId'] if data['items'] else None
-    video_url = f'https://www.youtube.com/watch?v={video_id}' if video_id else "No videos found."
+    video_url = f'https://www.youtube.com/embed/{video_id}' if video_id else "No videos found."
     return render_template('video.html', video_url=video_url, category=category)
 
 if __name__ == '__main__':
