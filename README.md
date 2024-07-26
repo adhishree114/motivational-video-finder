@@ -11,7 +11,6 @@ Motivational Video Finder is a web application that helps users discover motivat
   Python
   Flask
   HTML/CSS
-  JavaScript
   YouTube Data API (via google-api-python-client)
   Werkzeug
   Gunicorn (for deployment)
